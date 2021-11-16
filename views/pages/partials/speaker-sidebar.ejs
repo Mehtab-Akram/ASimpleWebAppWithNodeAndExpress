@@ -1,0 +1,14 @@
+<aside class="col-md-4">
+  <article class="sidebar">
+    <h1 class="sidebar-title">Artwork on display</h1>
+    <p class="sidebar-body">
+      While you attend the conference, head over to our gallery where you can check out some of the
+      work from our speakers.
+    </p>
+    <div class="pixgrid clearfix">
+      <% for( let index = 0; index < allArtwork.length; index++ ) { %>
+      <img src="/images/artwork/<%= allArtwork[index] %> " alt="Artwork <%=index%>" />
+      <% } %>
+    </div>
+  </article>
+</aside>
